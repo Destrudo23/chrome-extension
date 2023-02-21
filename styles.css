@@ -18,6 +18,11 @@ background-color: #7c7c7c;
 box-sizing: border-box;
 margin-bottom: 20px;
 }
+::placeholder {
+  color: #2e2e2e;
+  opacity: 1;
+  font-style: italic;
+}
 
 button {
   background: #5f9341;

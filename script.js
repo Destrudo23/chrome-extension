@@ -11,6 +11,14 @@ if (leadsFromLocalStorage) {
   renderLeads()
 }
 
+tabBtn.addEventListener("click", function(){    
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+      myLeads.push(tabs[0].url)
+      localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+      renderLeads(myLeads)
+  })
+})
+
 function renderLeads() {
   let listItems = "";
   for (let i = 0; i < myLeads.length; i++) {
@@ -39,11 +47,15 @@ deleteBtn.addEventListener("dblclick", function() {
   }
 )
 
+/*
 tabBtn.addEventListener ("click", function(){
   myLeads.push(window.location.href)
   localStorage.setItem("myLeads", JSON.stringify(myLeads))
   renderLeads()
   }
 )
+*/
+
+
 
 

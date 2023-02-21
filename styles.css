@@ -16,7 +16,7 @@ border: 2px solid #5f9341;
 padding: 10px;
 background-color: #7c7c7c;
 box-sizing: border-box;
-margin-bottom: 4px;
+margin-bottom: 20px;
 }
 
 button {
@@ -37,7 +37,7 @@ ul {
   padding-left: 0;
   border: 2px solid #7c7c7c;
   min-width: 400px;
-  min-height: 200px;  
+  min-height: 150px;  
 }
 
 li {
